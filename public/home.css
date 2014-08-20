@@ -1,0 +1,64 @@
+body {
+
+  background-color: lightblue;
+  color: white;
+
+}
+
+.pagecontents{
+
+  padding: 20px;
+  background-color: darkblue;
+
+  margin-right: auto;
+  margin-left: auto;
+  width: 70%;
+
+}
+
+ul{
+
+list-style: none
+
+}
+
+a{
+  font-family: verdana;
+  font-size: 17px;
+  text-decoration: none;
+}
+
+a:visited {
+
+color: #FAFAFA;
+
+}
+
+a:link {
+
+color: #dfd231;
+
+}
+
+a:visited {
+
+color: #8A8A54;
+
+}
+
+h1 {
+  font-family: verdana;
+  font-size: 40px;
+}
+
+h2 {
+  font-family: verdana;
+  font-size: 30px;
+
+}
+
+img {
+  border: 10px lightblue solid;
+
+
+}

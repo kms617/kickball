@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Basic HTML Page</title>
+    <link rel="stylesheet" href="home.css" />
+  </head>
+
+  <body>
+<center>
+
+    <div class="pagecontents">
+
+    <h1>League of Cool Kickball Professionals!</h1>
+
+    <img src="/kickball-logo.jpg">
+
+    <ul>
+      <li><h2>Teams</h2></li>
+
+      <% teamz = [] %>
+      <% @playerz.each do |row| %>
+      <% teamz << row["team"] %>
+      <% end %>
+
+    <% teamz = teamz.uniq %>
+    <% teamz.each do |each| %>
+      <li><p><a href="team/<%= each %>"><%= each %></a></p></li>
+
+    <% end %>
+
+<li><h2>Positions</h2></li>
+
+      <% posz = [] %>
+      <% @playerz.each do |row| %>
+      <% posz << row["position"] %>
+      <% end %>
+
+    <% posz = posz.uniq %>
+    <% posz.each do |each| %>
+      <li><p><a href="pos/<%= each %>"><%= each %></a></p></li>
+
+    <% end %>
+
+    </ul>
+
+
+  </div>
+</center>
+
+  </body>
+</html>

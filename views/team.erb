@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title><%= @team %></title>
+    <link rel="stylesheet" href="/home.css" />
+  </head>
+
+  <body>
+    <div class="pagecontents">
+<center>
+    <img src="/kickball-logo.jpg">
+
+    <h1><%= @team %></h1>
+
+
+
+    <% @playerz.each do |player_row| %>
+
+      <% if player_row["team"] == @team %>
+        <p><%= player_row["first_name"] %>
+        <%= player_row["last_name"] %> -
+        <%= player_row["position"] %></p>
+        <% end %>
+
+    <% end %>
+
+
+</center>
+
+</div>
+
+  </body>
+</html>
